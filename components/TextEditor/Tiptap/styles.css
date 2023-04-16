@@ -1,0 +1,90 @@
+.ProseMirror {
+  @apply p-2 outline-none rounded-sm border border-gray-300 dark:border-custom-gray3 focus:border-cyan-500 dark:focus:border-cyan-700 min-h-[400px] max-w-[776px];
+}
+
+.ProseMirror > h1 {
+  @apply text-3xl font-bold;
+}
+.ProseMirror > h2 {
+  @apply text-2xl font-bold;
+}
+.ProseMirror > ul {
+  @apply ml-5 list-disc;
+}
+
+.tiptap-toolbar {
+  /* @apply flex flex-wrap justify-between gap-1 items-center mb-3 border border-gray-300 dark:border-gray-600 p-2 sticky top-[75px] bg-white dark:bg-custom-gray2 z-10; */
+  @apply flex flex-wrap justify-between gap-1 items-center mb-3 border border-gray-300 dark:border-gray-600 p-2 bg-white dark:bg-custom-gray2 z-10;
+}
+
+.tiptap-toolbar button {
+  @apply bg-gray-300 dark:bg-gray-500 px-2 py-0.5 rounded;
+}
+
+.tiptap-toolbar .is-active {
+  @apply bg-gray-400 dark:bg-gray-700;
+}
+
+/* .ProseMirror {} */
+.ProseMirror > * + * {
+  margin-top: 0.75em;
+  /* @apply mt-4; */
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  /* padding: 0 1rem; */
+  @apply py-0 px-4;
+}
+
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4,
+.ProseMirror h5,
+.ProseMirror h6 {
+  /* line-height: 1.1; */
+  @apply leading-[1.1];
+}
+
+.ProseMirror code {
+  /* background-color: #008000;
+  color: yellow; */
+  @apply bg-transparent text-yellow-200;
+}
+
+.ProseMirror pre {
+  /* background: #0d0d0d;
+  color: #fff;
+  font-family: "JetBrainsMono", monospace;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem; */
+  @apply bg-[#0d0d0d] text-white font-["JetBrainsMono",monospace] py-3 px-4 rounded-lg;
+}
+
+.ProseMirror pre code {
+  /* color: inherit;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem; */
+  @apply text-inherit p-0 bg-none text-xs;
+}
+
+.ProseMirror img {
+  /* max-width: 100%;
+  height: auto; */
+  @apply max-w-full h-auto;
+}
+
+.ProseMirror blockquote {
+  /* padding-left: 1rem;
+  border-left: 2px solid #9c9c9c; */
+  @apply pl-4 border-l-2 border-[#9c9c9c];
+}
+
+.ProseMirror hr {
+  /* border: none;
+  border-top: 2px solid #9c9c9c;
+  margin: 2rem 0; */
+  @apply border-t-2 border-solid my-8 mx-0;
+}
